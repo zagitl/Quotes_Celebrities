@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="edu.itvo.quotescelebrities.presentation.view.QuoteRandomFragment"
+        android:label="@string/menu_quote_randomly"
+        tools:layout="@layout/fragment_quote_random" />
+    <fragment
+        android:id="@+id/nav_quote_add"
+        android:name="edu.itvo.quotescelebrities.presentation.view.QuoteAddFragment"
+        android:label="@string/menu_quote_add"
+        tools:layout="@layout/fragment_quote_add" />
+
+    <fragment
+        android:id="@+id/nav_quote_list"
+        android:name="edu.itvo.quotescelebrities.presentation.view.QuoteListFragment"
+        android:label="@string/menu_quote_list"
+        tools:layout="@layout/fragment_quote_list" />
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="edu.itvo.quotescelebrities.presentation.view.LoginFragment"
+        android:label="@string/menu_user_login"
+        tools:layout="@layout/fragment_login" />
+</navigation>
